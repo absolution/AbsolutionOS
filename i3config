@@ -11,24 +11,14 @@ floating_modifier Mod1
 workspace_bar no
 
 # Conky or i3status
-#exec conky -c /etc/conky/conky.conf | i3-wsbar -c "dzen2 -dock -h 18 -w 1024 -ta l" --show-all
 exec i3bar -c "i3status"
 
 # Background
-#exec feh --bg-center ~/Pictures/archlinux-desktop.png
 exec feh --bg-center ~/Pictures/arch1.jpeg
-#exec xset s noblank s noexpose r rate 340 25 -dpms &
 
 # Workspace Names
-#workspace 1 main
-#workspace 2 term
 workspace 2 www
 workspace 3 irc
-
-# Assign Workspace
-#assign "chromium" 2
-#assign "terminal" 2
-#assign "irssi" 3
 
 # Fullscreen (Mod1+f)
 bind Mod1+41 f
@@ -127,14 +117,6 @@ bind Mod1+Shift+19 m10
 #bind Mod1+36 exec /usr/bin/urxvt
 bind Mod1+36 exec /usr/bin/terminal
 
-# Backlight Up
-bindsym Mod4+Shift+Up exec sudo /usr/sbin/backlight up
-#sudo /usr/local/sbin/backlight up
-
-# Backlight Down
-bindsym Mod4+Shift+Down exec sudo /usr/sbin/backlight down
-#exec sudo /usr/local/sbin/backlight down
-
 # Mod1+Shift+q kills the current client
 bind Mod1+Shift+24 kill
 
@@ -155,11 +137,6 @@ ipc-socket ~/.i3/ipc.sock
 # Mount USB
 bindsym Mod1+Control+m exec sudo mount -o rw,noauto,async,user,umask=1000 /dev/sdb1 /media/usb
 
-# Restart i3 inplace
-#bind Mod1+Shift+27 restart
-
-# Exit i3
-#bind Mod1+Shift+26 exit
 #############################################################
 # DELETE THE FOLLOWING LINES TO DISABLE THE WELCOME MESSAGE #
 #############################################################
